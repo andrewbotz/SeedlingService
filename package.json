@@ -26,7 +26,7 @@
     "posttest": "npm run lint",
     "test:dev": "lb-mocha --allow-console-logs dist/__tests__/**/*.js && npm run posttest",
     "docker:build": "docker build -t seedlingservice .",
-    "docker:run": "docker run -p 3000:3000 -d seedlingservice",
+    "docker:run": "docker run -p 3001:3001 -d seedlingservice",
     "migrate": "node ./dist/migrate",
     "prestart": "npm run build",
     "start": "node -r source-map-support/register .",
